@@ -25,8 +25,8 @@
 ## 1. start
 
 ```
-$ git clone https://github.com/GuoYongfeng/webpack-dev-boilerplate
-$ cd webpack-dev-boilerplate
+$ git clone https://github.com/zzlw/webpack-dev-super
+$ cd webpack-dev-super
 $ npm install
 ```
 ## 2. dev

@@ -1,5 +1,5 @@
 {
-  "name": "webpack-dev-boilerplate",
+  "name": "webpack-dev-super",
   "version": "2.0.0",
   "description": "boilerplate",
   "main": "app/index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GuoYongfeng/webpack-dev-boilerplate.git"
+    "url": "git+https://github.com/zzlw/webpack-dev-super.git"
   },
   "keywords": [
     "react",
@@ -25,9 +25,9 @@
   "author": "guoyongfeng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GuoYongfeng/webpack-dev-boilerplate/issues"
+    "url": "https://github.com/zzlw/webpack-dev-super/issues"
   },
-  "homepage": "https://github.com/GuoYongfeng/webpack-dev-boilerplate#readme",
+  "homepage": "https://github.com/zzlw/webpack-dev-super#readme",
   "dependencies": {
     "history": "^4.4.1",
     "react": "^15.3.2",
