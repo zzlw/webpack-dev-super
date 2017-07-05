@@ -2,6 +2,11 @@
 
 > 这个脚手架工程模板用于快速启动基于 React + Webpack 为技术栈的前端项目
 
+<p align="center">
+  <b>最好用的webpack脚手架</b>
+</p>
+
+
 ## Features 功能特性
 
 - 可以解析 JSX 语法
