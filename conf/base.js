@@ -33,7 +33,7 @@ module.exports = {
     },
     output: {
       path: commonPath.public,
-      publicPath: '/'
+      publicPath: '/public/'
     },
     resolve: {
       extensions: ['', '.js', '.jsx', '.json'],
