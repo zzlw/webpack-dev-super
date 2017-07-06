@@ -1,3 +1,4 @@
 'use strict';
 
-export MyComponent from './MyComponent/index.jsx';
+export BgCanvas from './bg-canvas';
+export MusicBgCanvas from './music-bg-canvas';

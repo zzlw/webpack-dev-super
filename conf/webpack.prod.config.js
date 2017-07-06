@@ -8,7 +8,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
  * @type {String}
  */
 config.output.filename = '[name].[chunkhash:6].js';
-config.output.chunkFilename = '[id].[chunkhash:6].js';
+config.output.chunkFilename = '[name].[chunkhash:6].js';
 
 /**
  * devtool config

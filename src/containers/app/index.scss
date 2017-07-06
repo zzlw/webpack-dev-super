@@ -1,0 +1,116 @@
+@import '../../style/library.scss';
+.app{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+  display: flex;
+    .app_left_box{
+      float: left;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      .app_left_box_logo{
+        width: 150px;
+        cursor: pointer;
+        height: 150px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        .app_left_box_logo_box{
+          width: 100px;
+          margin: auto;
+          .app_left_box_logo_box_svg{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .app_left_box_child{
+        width: 150px;
+        flex: 1;
+        border-right: 1px solid #ccc;
+        .app_left_box_child_ul{
+          padding: 40px 0 20px;
+          .app_left_box_child_ul_li{
+            cursor: pointer;
+            margin-bottom: 10px;
+            .app_left_box_child_ul_li_box{
+
+              display: flex;
+              align-items: center;
+              text-decoration: none;
+              .app_left_box_child_ul_li_box_svg{
+                height: 40px;
+                flex: 12;
+              }
+              .app_left_box_child_ul_li_box_p{
+                @include font_main_head();
+                flex: 24;
+              }
+              .app_left_box_child_ul_li_box_hover{
+                color: #2db7f5;
+              }
+            }
+            &:hover{
+              .app_left_box_child_ul_li_box_p{
+                color: #2db7f5;
+              }
+            }
+          }
+        }
+      }
+      .app_left_box_copyright{
+        width: 150px;
+        height: 70px;
+        background: #424242;
+        border-right: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        .app_left_box_copyright_box{
+          padding-top: 21px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: center;
+          .app_left_box_copyright_box_svg{
+            width: 14px;
+            height: 14px;
+            fill: #fff;
+          }
+          .app_left_box_copyright_box_svg_xin{
+            fill: #E91E63;
+          }
+          .app_left_box_copyright_box_span{
+            @include font_help_text();
+            color: #fff;
+            display: inline-block;
+            text-shadow: 1px 1px 0 #000 inset;
+            &.app_left_box_copyright_box_name{
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+  .app_right{
+    flex: 1;
+    position: relative;
+    .app_right_nav{
+      width: 100%;
+      background: rgba( 250 , 250 , 250 , 1 );
+      display: flex;
+      .app_right_nav_left{
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        padding: 15px 15px;
+      }
+      .app_right_nav_right{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../style/library.scss';
+/* Header */
+.large_header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	background:#333 url('../../img/demo-2-bg.jpg') no-repeat center bottom / cover;
+	z-index: -1;
+}

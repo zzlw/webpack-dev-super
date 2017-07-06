@@ -1,0 +1,51 @@
+//字体使用规范
+//字体通用方法
+@mixin font_fn( $size : 12px, $color : #fff, $bold : narmal ){
+  font-size: $size;
+  font-weight: $bold;
+  color: $color;
+  line-height: 1.5;
+}
+
+@mixin bg_fn( $url, $repeat, $position, $size ){
+  background-image: $url;
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}
+
+
+//主标题
+@mixin font_main_head(){ //+
+  @include font_fn(16px, #666, bold);
+}
+
+//次级标题
+@mixin font_sub_head(){ //+
+  @include font_fn(14px, #666, bold);
+}
+
+//小标题
+@mixin font_small_head(){ //+
+  @include font_fn(12px, #666, bold);
+}
+
+//正文
+@mixin font_text(){ //+
+  @include font_fn(12px, #666);
+}
+
+//辅助文字
+@mixin font_help_text(){
+  @include font_fn(12px, #999);
+}
+
+//失效文字
+@mixin font_disabled_text(){
+  @include font_fn(12px, #ccc);
+}
+
+//链接文字
+@mixin font_link_text(){
+  @include font_fn(12px, #2db7f5);
+}

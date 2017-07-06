@@ -16,7 +16,7 @@ var publicPath = config.commonPath.public;
  * @type {String}
  */
 config.output.filename = '[name].js';
-config.output.chunkFilename = '[id].js';
+config.output.chunkFilename= '[name].[chunkhash:6].chunk.js';
 config.output.publicPath = '/';
 
 /**
@@ -57,8 +57,8 @@ config.module.loaders.push({
   test: /\.css$/,
   loader: 'style!css'
 }, {
-  test: /\.less$/,
-  loader: 'style!css!less'
+  test: /\.scss$/,
+  loader: 'style!css!sass'
 });
 
 config.plugins.push(
