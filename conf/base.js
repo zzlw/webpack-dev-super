@@ -33,7 +33,7 @@ module.exports = {
     },
     output: {
       path: commonPath.public,
-      publicPath: '/public/'
+      publicPath: '/webpack-dev-super/public/'
     },
     resolve: {
       extensions: ['', '.js', '.jsx', '.json'],
