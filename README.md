@@ -83,6 +83,9 @@ $ npm run build
 3. [react-immutable-proptypes](https://www.npmjs.com/package/react-immutable-proptypes)
 4. [react-router-redux](https://www.npmjs.com/package/react-router-redux)
 
+
+## 5. 目前只写了2-3个路由页面供大家参考
+
 #### 欢迎大家和我一起维护优化这个脚手架项目
 
 #### QQ: 907468866
