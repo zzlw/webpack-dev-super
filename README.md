@@ -77,13 +77,14 @@ $ npm run build
 - [x] [Eslint](https://github.com/eslint/eslint)
 
 
-## 4. 目前遇到的问题（ 无法完美整合以下 4 项依赖，做到 [react](https://facebook.github.io/react/) 最强性能优化 [webpack](https://webpack.github.io) 脚手架 ）
+## 4. 目前遇到的问题（ 无法完美整合以下 4 项依赖 ）
 1. [immutable](https://www.npmjs.com/package/immutable)
 2. [redux-immutable](https://www.npmjs.com/package/redux-immutable)
 3. [react-immutable-proptypes](https://www.npmjs.com/package/react-immutable-proptypes)
 4. [react-router-redux](https://www.npmjs.com/package/react-router-redux)
 
+#### 欢迎大家和我一起维护优化这个脚手架项目
 
-
-[react-router-redux](http://tencent://message/?uin=907468866&Site=&Menu=yes)
-<a href="tencent://message/?uin=907468866&Site=&Menu=yes">点我和QQ是907468866的用户聊天</a>  
+#### QQ: 907468866
+#### WX: liang68866
+#### Email: zzlwte@gmail.com
