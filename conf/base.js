@@ -33,7 +33,7 @@ module.exports = {
     },
     output: {
       path: commonPath.public,
-      publicPath: 'https://zzlw.github.io/webpack-dev-super/public/'
+      publicPath: '/'
     },
     resolve: {
       extensions: ['', '.js', '.jsx', '.json'],
