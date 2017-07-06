@@ -67,7 +67,6 @@ $ npm run build
 - [x] [ES6](http://es6.ruanyifeng.com/)
 - [x] [Redux](https://github.com/rackt/redux)
 - [x] [React-router](https://github.com/rackt/react-router-redux)
-- [x] [react-router-redux](https://github.com/reactjs/react-router-redux)
 - [x] [Babel](https://babeljs.io/)
 - [ ] [immutable](https://www.npmjs.com/package/immutable)
 - [ ] [redux-immutable](https://www.npmjs.com/package/immutable)
