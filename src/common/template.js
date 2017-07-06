@@ -1,5 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 // import pureRender from 'pure-render-decorator';
+
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { is, fromJS} from 'immutable';
 // import ImmutablePropTypes from 'react-immutable-proptypes';
