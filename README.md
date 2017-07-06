@@ -85,5 +85,5 @@ $ npm run build
 
 
 
-[react-router-redux](tencent://message/?uin=907468866&Site=&Menu=yes);
+[react-router-redux](tencent://message/?uin=907468866&Site=&Menu=yes)
 <a href="tencent://message/?uin=907468866&Site=&Menu=yes">点我和QQ是907468866的用户聊天</a>  
