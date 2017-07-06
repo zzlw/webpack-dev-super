@@ -33,7 +33,7 @@ module.exports = {
     },
     output: {
       path: commonPath.public,
-      publicPath: '/static/'
+      publicPath: '/'
     },
     resolve: {
       extensions: ['', '.js', '.jsx', '.json'],
@@ -74,7 +74,10 @@ module.exports = {
       }),
       new webpack.DefinePlugin({
         __DEV__: env === 'development',
-        __PROD__: env === 'production'
+        __PROD__: env === 'production',
+        'process.env': {        //判断当前react环境
+          'NODE_ENV': '"' + process.env.NODE_ENV + '"'
+        }
       })
     ]
 };

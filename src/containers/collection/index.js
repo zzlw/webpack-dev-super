@@ -55,7 +55,11 @@ class Main extends Component {
 
 
   render() {
-  //  console.log(this.state.stop_state);
+
+    if ( __DEV__ ){
+      //  console.log(this.state.stop_state);
+    }
+    
     const { stop_state, size } = this.state;
 
     const dataSource = [{

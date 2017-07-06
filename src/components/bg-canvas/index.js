@@ -142,7 +142,10 @@ class BgCanvas extends Component {
   }
 
   render() {
-    console.log('%c 子组件不会做重复刷新! ', 'background: #222; color: #bada55;');
+    if ( __DEV__ ){
+      console.log('%c 子组件不会做重复刷新! ', 'background: #222; color: #bada55;');
+    }
+    
     return (
   		<div className="large_header">
   			<canvas className="demo_canvas"></canvas>

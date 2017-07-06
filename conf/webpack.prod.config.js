@@ -24,8 +24,8 @@ config.module.loaders.push({
   test: /\.css$/,
   loader: ExtractTextPlugin.extract('style', 'css')
 }, {
-  test: /\.less$/,
-  loader: ExtractTextPlugin.extract('style', 'css!less')
+  test: /\.scss$/,
+  loader: ExtractTextPlugin.extract('style', 'css!sass')
 });
 
 /**
@@ -46,7 +46,7 @@ config.plugins.push(
       warnings: false
     }
   }),
-  new webpack.optimize.OccurenceOrderPlugin(),
+  // new webpack.optimize.OccurenceOrderPlugin(),
   // 公共代码分离打包
   new webpack.optimize.CommonsChunkPlugin({
     names: ['vendor', 'mainifest']
@@ -56,5 +56,7 @@ config.plugins.push(
     allChunks : true
   })
 );
+
+
 
 module.exports = config;

@@ -7,7 +7,6 @@ import {
 const initialState = Immutable.fromJS({token: null});
 
 function user (state = initialState,action){
-	console.log(state);
 	switch (action.type){
 		case SAVE_USER:
 			return state.set('token',action.token);

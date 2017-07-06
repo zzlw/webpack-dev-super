@@ -36,7 +36,11 @@ class Main extends Component {
 
   render() {
     let { posts, routing }= this.props;
-    console.log(routing,"测试");
+
+    if ( __DEV__ ){
+      console.log(routing,"测试");
+    }
+    
     return (
       <div className="home">
         <BgCanvas title="fff"/>
