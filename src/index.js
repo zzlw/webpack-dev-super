@@ -1,11 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { Router,browserHistory } from 'react-router';
 // import { syncHistoryWithStore } from 'react-router-redux';
 import Immutable from 'immutable';
 import configureStore from './redux/store/store';
-import { RouterConfig } from './routes';
+import route from './routes/index';
 import './style/global.scss';
 
 
@@ -29,7 +28,7 @@ const root = document.getElementById('app');
 
 render(
   <Provider store= { store }>
-    <Router routes={ RouterConfig } history={ browserHistory }/>
+    {route}
   </Provider>,
   root
 )
