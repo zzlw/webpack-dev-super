@@ -3,6 +3,8 @@ import * as reducer from '../reducers/index';
 import thunk from 'redux-thunk';
 
 import createLogger from "redux-logger";
+// import Localstorage from "../middleware/localstorage";
+// const { read,write } = Localstorage("react-starteraaaaaassssssdddb");
 import { composeWithDevTools } from "redux-devtools-extension";
 // 引入redux 日志
 const logger = createLogger();

@@ -55,6 +55,7 @@ const Main = mySeting => {
     //mapStateToProps and mapDispatchToProps
     return connect(state => { //将顶层组件与模版绑定后return回去，配置路由的时候用的就是和redux绑定的组件，所以其实每个路由匹配的都是同一个组件，只不过这个组件的内容不同
         let { user, fetchData } = state;
+        console.log(user,fetchData,"测试");
         return {
           user: user.toJS(),
           fetchData: fetchData.toJS(),

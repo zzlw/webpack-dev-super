@@ -31,7 +31,7 @@ class Main extends Component {
 
   componentDidMount(){
     // let { fetchPosts } = this.props;
-    // fetchPosts();
+
   }
 
   render() {

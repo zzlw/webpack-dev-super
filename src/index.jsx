@@ -17,9 +17,14 @@ if (__PROD__) {
   console.log("现在是生产环境")
 }
 
-// const initialState = Immutable.Map();
 
-const store = configureStore();
+
+const initialState = {
+	user: Immutable.fromJS({token: window.localStorage.getItem("token") || null }),
+	fetchData: Immutable.fromJS({data: {}, isFetching: false})
+}
+
+const store = configureStore( initialState );
 const root = document.getElementById('app');
 
 

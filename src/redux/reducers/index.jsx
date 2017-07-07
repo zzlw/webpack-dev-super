@@ -5,11 +5,13 @@ import {
 } from '../actions';
 
 
+
 //存储token
 const initialState = Immutable.fromJS({token: null});
 export const user = (state = initialState,action) => {
 	switch (action.type){
 		case SAVE_USER:
+			window.localStorage.setItem("token", action.token);
 			return state.set('token',action.token);
 		case DELETE_USER:
 			return initialState;
@@ -17,8 +19,6 @@ export const user = (state = initialState,action) => {
 			return state;
 	}
 }
-
-
 
 import {
 	REQUEST_POSTS,
