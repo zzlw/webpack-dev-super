@@ -19,7 +19,7 @@ var commonPath = {
 module.exports = {
     commonPath: commonPath,
     entry: {
-      app: path.join(srcPath, 'index.js'),
+      app: path.join(srcPath, 'index.jsx'),
       vendor: [
         'history',
         'react',
