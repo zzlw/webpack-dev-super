@@ -45,7 +45,7 @@ class Main extends Component {
 
   render() {
     const { stop_state, size } = this.state.size;
-    const { user, children, saveUser, posts, fetchPosts } = this.props;
+    // const { user, children, saveUser, fetchPosts } = this.props;
 
     return (
       <div className="app">

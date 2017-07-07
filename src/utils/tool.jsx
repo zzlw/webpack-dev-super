@@ -1,5 +1,5 @@
 
-import * as config from './Config';
+import * as config from './config';
 
 const {target} = config;
 export const tool = {};
