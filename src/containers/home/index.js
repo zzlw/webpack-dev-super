@@ -23,7 +23,7 @@ class Main extends Component {
   }
 
 
-  handleClick(e) {
+  handleClick(e){
     this.setState({
       current: e.key,
     });
