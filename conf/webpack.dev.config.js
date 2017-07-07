@@ -33,7 +33,7 @@ config.entry.app = [
   'eventsource-polyfill',
   'webpack-hot-middleware/client?reload=true',
   'webpack/hot/only-dev-server',
-  path.join(srcPath, "index.js")
+  path.join(srcPath, "index.jsx")
 ];
 
 /**
