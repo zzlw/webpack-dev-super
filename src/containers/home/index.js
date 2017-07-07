@@ -40,14 +40,14 @@ class Main extends Component {
     if ( __DEV__ ){
       console.log(routing,"测试");
     }
-    
+
     return (
       <div className="home">
         <BgCanvas title="fff"/>
         <p className="home_title">{ posts.isFetching?"正在拉去数据！":"成功！" }</p>
         <p className="home_title">欢迎和我一起维护这个音乐项目！</p>
         <p className="home_text">
-          <a className="home_text_a" href="http://github.com/liang869219658" target="_blank">github.com/liang869219658</a>
+          <a className="home_text_a" href="http://github.com/zzlw/webpack-dev-super" target="_blank">{"http://github.com/zzlw/webpack-dev-super"}</a>
         </p>
       </div>
     );
