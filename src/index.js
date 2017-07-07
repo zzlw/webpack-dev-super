@@ -1,10 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
+import { Router, browserHistory, hashHistory } from 'react-router';
 // import { syncHistoryWithStore } from 'react-router-redux';
 import Immutable from 'immutable';
 import configureStore from './redux/store/store';
-import route from './routes/index';
+import { RouterConfig } from './routes';
 import './style/global.scss';
 
 
@@ -22,13 +23,16 @@ const store = configureStore();
 const root = document.getElementById('app');
 
 
+const history = process.env.NODE_ENV !== 'production' ? browserHistory : hashHistory;
+
+
 // const history = syncHistoryWithStore( browserHistory, store );
 
 
 
 render(
   <Provider store= { store }>
-    {route}
+    <Router routes={ RouterConfig } history={ history }/>
   </Provider>,
   root
 )
