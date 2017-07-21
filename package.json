@@ -33,6 +33,7 @@
     "history": "^4.4.1",
     "immutable": "^3.8.1",
     "isomorphic-fetch": "^2.2.1",
+    "mockjs": "^1.0.1-beta3",
     "prop-types": "^15.5.10",
     "rc-queue-anim": "^0.13.3",
     "react": "^15.6.1",
@@ -44,7 +45,8 @@
     "redux": "^3.6.0",
     "redux-immutable": "^4.0.0",
     "redux-logger": "^2.7.4",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "superagent": "^3.5.2"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",

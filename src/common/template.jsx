@@ -13,6 +13,7 @@ const Main = mySeting => {
         id: '', //应用唯一id表示
         url: '', //请求地址
         data: {}, //发送给服务器的数据
+        method: "get",
         component: <div></div>, //数据回调给的组件
     };
 
@@ -36,7 +37,7 @@ const Main = mySeting => {
 
         componentDidMount() {//获取数据
             if (this.props.seting.url) {
-                this.props.fetchPosts(this.props.seting.url,this.props.seting.data);
+                this.props.fetchPosts(this.props.seting.url,this.props.seting.data,this.props.seting.method);
             }
         }
 
@@ -45,9 +46,6 @@ const Main = mySeting => {
         }
 
         shouldComponentUpdate(nextProps, nextState) {
-            // if (nextProps.state.get('isFetching')) {
-            //     return false
-            // }
             return !is(fromJS(this.props), fromJS(nextProps)) || !is(fromJS(this.state),fromJS(nextState))
         }
     }
@@ -55,7 +53,6 @@ const Main = mySeting => {
     //mapStateToProps and mapDispatchToProps
     return connect(state => { //将顶层组件与模版绑定后return回去，配置路由的时候用的就是和redux绑定的组件，所以其实每个路由匹配的都是同一个组件，只不过这个组件的内容不同
         let { user, fetchData } = state;
-        console.log(user,fetchData,"测试");
         return {
           user: user.toJS(),
           fetchData: fetchData.toJS(),

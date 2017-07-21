@@ -1,6 +1,7 @@
-import fetch from 'isomorphic-fetch'
+import request from 'superagent';
 import {target} from '../../utils/config'
 import {tool} from '../../utils/tool'
+import { display_index } from '../../apis';
 
 export const SAVE_USER = 'SAVE_USER';
 export const DELETE_USER = 'DELETE_USER';
@@ -23,32 +24,6 @@ export function deleteUser() {
 	return { type: DELETE_USER };
 }
 
-// //发起请求
-// export function fetch_posts_request() {
-//   return { type: FETCH_POSTS_REQUEST }
-// }
-
-// //请求失败
-// export function fetch_posts_failure() {
-//   return { type: FETCH_POSTS_FAILURE, error: 'Oops' }
-// }
-//
-// //请求成功
-// export function fetch_posts_success(json) {
-//   return { type: FETCH_POSTS_SUCCESS, response: { ...json } }
-// }
-//
-// //异步获取数据
-// export const fetchPosts = postTitle => (dispatch, getState) => {
-//   dispatch(fetch_posts_request());
-//
-//   setTimeout(function(){
-//     dispatch(fetch_posts_success({ mask: "ok" }));
-//   },5000)
-//
-// };
-
-
 
 //开始获取数据
 const requestPosts = path => {
@@ -62,28 +37,16 @@ const requestPosts = path => {
 const receivePosts = (path, json) => {
   return {
         type: RECEIVE_POSTS,
-        path ,
+        path,
         json
     }
 }
 
 
 // 页面初次渲染时获取数据
-export const fetchPosts = (path, postData) => {
-    let url = target + path + tool.paramType(postData);
+export const fetchPosts = (path, postData, method) => {
     return dispatch => {
         dispatch(requestPosts(postData));
-        return fetch(url,{
-            mode: 'cors',
-            "Content-Type": "application/json",
-        })
-        .then(response => {
-            if (response.ok) {
-                response.json().then(json => dispatch(receivePosts(path, json)))
-            } else {
-                console.log("status", response.status);
-            }
-        })
-        .catch(error => console.log(error))
+        return display_index(path,method,data => dispatch(receivePosts(path, data)),postData);
     }
 }
