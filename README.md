@@ -2,10 +2,6 @@
 
 > 这个脚手架工程模板用于快速启动基于 React + Webpack 为技术栈的前端项目
 
-<p align="center">
-  <b>最好用的webpack脚手架</b>
-</p>
-
 
 ## Features 功能特性
 
@@ -80,18 +76,3 @@ $ npm run build
 - [x] [Sass](https://github.com/sass/node-sass)
 - [x] [Eslint](https://github.com/eslint/eslint)
 
-
-## 4. 目前遇到的问题（ 无法完美整合以下 4 项依赖 ）
-1. [immutable](https://www.npmjs.com/package/immutable)
-2. [redux-immutable](https://www.npmjs.com/package/redux-immutable)
-3. [react-immutable-proptypes](https://www.npmjs.com/package/react-immutable-proptypes)
-4. [react-router-redux](https://www.npmjs.com/package/react-router-redux)
-
-
-## 5. 目前只写了2-3个路由页面供大家参考
-
-#### 欢迎大家和我一起维护优化这个脚手架项目
-
-#### QQ: 907468866
-#### WX: liang68866
-#### Email: zzlwte@gmail.com
