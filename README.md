@@ -2,6 +2,11 @@
 
 > 这个脚手架工程模板用于快速启动基于 React + Webpack 为技术栈的前端项目
 
+[![GitHub issues](https://img.shields.io/github/issues/zzlw/webpack-dev-super.svg)](https://github.com/zzlw/webpack-dev-super/issues)
+[![GitHub forks](https://img.shields.io/github/forks/zzlw/webpack-dev-super.svg)](https://github.com/zzlw/webpack-dev-super/network)
+[![GitHub stars](https://img.shields.io/github/stars/zzlw/webpack-dev-super.svg)](https://github.com/zzlw/webpack-dev-super/stargazers)
+[![GitHub license](https://img.shields.io/github/license/zzlw/webpack-dev-super.svg)](https://github.com/zzlw/webpack-dev-super/blob/master/LICENSE)
+
 
 ## Features 功能特性
 
